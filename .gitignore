@@ -1,0 +1,7 @@
+# project
+.coverage
+htmlcov/
+*.db
+.env
+.DS_Store
+EOF
