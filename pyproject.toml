@@ -41,5 +41,5 @@ mypy_path = "src"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-q --cov=hn_crawler --cov-report=term-missing"
+addopts = "-q --doctest-modules --cov=hn_crawler --cov-report=term-missing -m 'not live'"
 markers = ["live: hits the real Hacker News (skipped by default)"]
