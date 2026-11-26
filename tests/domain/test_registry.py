@@ -23,5 +23,7 @@ def test_get_returns_the_filter_with_that_name() -> None:
 def test_unknown_name_raises_an_error_listing_available_filters() -> None:
     registry = FilterRegistry([LongTitleFilter(), ShortTitleFilter])
 
-    with pytest.raises(UnknownFilterError, match="Available: long_title_filter, short_title_filter"):
+    with pytest.raises(
+        UnknownFilterError, match="Available: long_title_filter, short_title_filter"
+    ):
         registry.get("any")
