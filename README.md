@@ -27,6 +27,12 @@ uv run hn-crawler long_title_filter
 uv run hn-crawler short_title_filter
 uv run hn-crawler --stats
 ```
+<img width="783" height="310" alt="image" src="https://github.com/user-attachments/assets/087329ab-c5e8-40b9-9d36-24ed6baa88f6" />
+
+<img width="612" height="167" alt="image" src="https://github.com/user-attachments/assets/ddc370bb-3df9-49e9-bf9d-22362f32a26a" />
+
+
+<img width="550" height="102" alt="image" src="https://github.com/user-attachments/assets/d324282e-fe27-4108-b5ce-39e84db589ed" />
 
 ## Usage data
 
@@ -35,6 +41,8 @@ Every request is saved as a row in the `usage` table of `usage.db`: timestamp (U
 ```bash
 sqlite3 -header -column usage.db "SELECT * FROM usage;"
 ```
+
+<img width="783" height="71" alt="image" src="https://github.com/user-attachments/assets/cec28789-10ea-42a3-870e-8fc8af6bcd3c" />
 
 ## Architecture
 
