@@ -22,5 +22,5 @@ from hn_crawler.domain.text import count_words
         ("non\u00a0breaking space", 3),
     ],
 )
-def test_count_words(text: str, expected: int) -> None:
+def test_count_words(text: str | None, expected: int) -> None:
     assert count_words(text) == expected
