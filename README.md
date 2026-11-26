@@ -65,3 +65,9 @@ Code quality checks:
 ```bash
 uv run ruff format . && uv run ruff check . && uv run mypy
 ```
+
+## Future work
+
+This first version is a **command-line tool**, but the hexagonal architecture means new ways to use and store the data are just new adapters. The core (`domain/` and `application/`) stays the same.
+
+<img width="2044" height="868" alt="image" src="https://github.com/user-attachments/assets/ada05ec1-aa46-4db6-8f75-768d2dcc84b7" />
