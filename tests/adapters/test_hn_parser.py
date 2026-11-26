@@ -4,7 +4,6 @@ import pytest
 
 from hn_crawler.adapters.hacker_news.parser import HackerNewsParser
 from hn_crawler.application.ports import SourceError
-from hn_crawler.domain.models import Entry
 
 FIXTURES = Path(__file__).parent.parent / "fixtures"
 
